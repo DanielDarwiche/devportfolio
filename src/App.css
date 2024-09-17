@@ -58,7 +58,6 @@ body{
 }
 #home { 
   color:black ;
-  padding-top: 0rem;
   font-size: 1.2rem;
   text-align: left;
 }
@@ -69,7 +68,6 @@ body{
   border-radius: 5rem;  
   border: 0.1rem solid #000000;
 }
-
 .projekticons {
   display: flex;
   justify-content: center;
@@ -90,8 +88,6 @@ body{
   background-color: hsla(0, 0%, 100%, .2);
   transition: background-color 0.3s ease;
 }
-
-
 .contact-links {
   display: flex;
   justify-content: center;
@@ -120,8 +116,6 @@ body{
 .fa-face-smile-beam {
   color: #00204a;  
 }
-
-
 #about { 
   padding-top: 4rem;
   text-align: left;
@@ -180,8 +174,6 @@ body{
   list-style: none;
   text-align: center;
 }
-
-
 #projects { 
   padding-top: 4rem;
   text-align: center;
