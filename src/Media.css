@@ -1,0 +1,97 @@
+/* mellanstor SKÄRM */
+
+@media screen and (min-width: 700px) {
+    .box-layout{
+        width: 50%;
+    }
+    #about { 
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    
+}
+
+/* Dator SKÄRM */
+
+   @media screen and (min-width: 1024px) { 
+    body {
+      font-size: 1.3rem;
+    }
+    h2 {
+      font-size: 2.5rem; 
+      margin-bottom: 1rem;
+    }
+    .header {
+      position: fixed;
+      top: 2rem; 
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45%; 
+      border-radius: 3rem; 
+      background-color: rgba(0, 32, 74, 0.5); 
+      padding: 0.5rem;
+      box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.3); 
+    }
+    .header nav ul li {
+      margin: 0 1.2rem; 
+    }
+    .header nav ul li a {
+      font-size: 1.3rem; 
+    }
+    #profilbild {
+      width: 15rem;
+      border-radius: 7.5rem;
+    }
+    .projekticons li,
+    .contact-links li {
+      width: 6rem;
+      height: 6rem;
+      font-size: 3rem;
+    }
+    .fa-github,
+    .fa-envelope,
+    .fa-linkedin {
+      font-size: 3rem;
+    }
+    .section {
+      padding: 2rem;
+    }
+    #home,
+    #about,
+    #contact,
+    #skills,
+    #projects {
+      font-size: 1.8rem;
+    }
+    .box-layout {
+      padding-top: 1.5rem;
+      padding-bottom: 3rem;
+    }
+    .grid {
+      gap: 0.2rem;
+    }
+    .liskills {
+      padding: 0.8rem 0.8rem;
+      margin: 0.1rem;
+      font-size: 2rem;
+    }
+    .projectgrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        width: 90%;
+        justify-content: center;
+    }
+    .li-projects {
+      padding: 1.5rem;
+      border-radius: 3rem;
+    }
+    .li-projects a {
+      font-size: 2.8rem;
+    }
+    .tags {
+      font-size: 1.5rem;
+    }
+    .tags span {
+      margin-left: 0.2rem;
+    }
+  }

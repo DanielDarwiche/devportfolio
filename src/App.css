@@ -1,38 +1,226 @@
 .App {
   text-align: center;
+  color: white;
+}
+h2{
+  margin-bottom: 0rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+body{
+  background: linear-gradient(100deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 50%);
+  background-attachment: fixed; 
+  font-family: 'Inter', sans-serif;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #00204a;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+.header nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.header nav ul li {
+  margin: 0 0.8rem;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: white; 
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.header nav ul li a:hover,
+.header nav ul li a.active {
+  color:  #00bbf0; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* sections nedan */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 1.5rem;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+#home { 
+  color:black ;
+  padding-top: 0rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+#profilbild{
+  margin-top: 0.5rem;
+  width: 10rem;
+  object-fit: cover;
+  border-radius: 5rem;  
+  border: 0.1rem solid #000000;
+}
+
+.projekticons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.projekticons li {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 100%, .2);
+  transition: background-color 0.3s ease;
+}
+
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-links li {
+  margin: 0 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsla(0, 0%, 100%, .8);
+  transition: background-color 0.3s ease;
+}
+.fa-github,
+.fa-envelope,
+.fa-linkedin {
+  font-size: 2rem;
+  color: #00204a;
+}
+.fa-face-smile-beam {
+  color: #00204a;  
+}
+
+
+#about { 
+  padding-top: 4rem;
+  text-align: left;
+  color:black ;
+  font-size: 1.2rem;
+}
+#contact { 
+  padding-top: 0rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.contact-special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.contact-special li {
+  margin: 0 0.5rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.box-layout{
+  background-color: hsla(0, 0%, 100%, .1);
+  list-style-type: none;
+  border-radius: 1rem;  
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  width: 90%;
+}
+#skills { 
+  padding-top: 4rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.grid {
   color: white;
+  border-radius: 2rem;
+  margin-top: 0rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  justify-content: center;
+  width: 100%;
+}
+.liskills {
+  background-color: hsla(0, 0%, 100%, .1);
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 0.6rem 0.6rem;
+  margin: 0.2rem;
+  list-style: none;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#projects { 
+  padding-top: 4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.projectgrid {
+  color: black;
+  margin-top: 1rem;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1rem;
+  width: 100%;
+  padding: 0;
+}
+.li-projects {
+  background-color: hsla(0, 0%, 100%, .1);
+  box-shadow: 0.1rem 0.6rem 0.9rem rgba(0, 0, 0, 0.7);
+  border-radius: 2rem;
+  padding: 1rem;
+  list-style: none;
+  text-align: left;
+}
+.li-projects a{
+  display: block;  
+  text-decoration: underline;  
+  color:black;
+  font-size:1.2rem;
+  font-weight: 700;
+  text-align: center !important;
+}
+.tags {
+  text-align: center;
+  font-size: 0.8rem; 
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.tags span {
+  display: inline-block;
+  margin-left: 0.5rem;
 }
