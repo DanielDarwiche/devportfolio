@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import profilbild from '../photos/kp.jpg'
+import profilbild from '../photos/bild.jpg'
 import React from 'react';
 
 const Home: React.FC = () => {
@@ -12,17 +11,20 @@ const Home: React.FC = () => {
       Take a look at my previous projects to see some of my earlier creations.</p>
       <ul className="contact-links">
       <li>
+      <a href="mailto:danielinti1@hotmail.com?subject=Hello!" title="Send me a mail">
       <i className= "fa-sharp fa-solid fa-envelope"></i>
-        <a href="mailto:danielinti1@hotmail.com?subject=Hello!" title="Say hello!"></a>
-      </li>
-      <li>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.github.com/danieldarwiche/" target="_blank" rel="noopener noreferrer" title="Visit my Github profile">
       <i className= "fa-brands fa-github"></i>
-        <a href="https://www.github.com/danieldarwiche/" target="_blank" rel="noopener noreferrer" title="Visit my Github profile!"></a>
-      </li>
-      <li>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/daniel-darwiche-9125a6269/" target="_blank" rel="noopener noreferrer" title="Visit my Linkedin profile">
       <i className= "fa-brands fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/daniel-darwiche-9125a6269/" target="_blank" rel="noopener noreferrer" title="I&#x27;m on Linkedin!"></a>
-      </li>
+      </a>
+    </li>
       </ul>
 
       <ul className="projekticons">
@@ -36,7 +38,8 @@ const Home: React.FC = () => {
     <a href="https://danieldarwiche.netlify.app" target="_blank" rel="noopener noreferrer" title="Developer Portfolio">💻</a>
   </li> 
   <li>
-    <a href="#" title="Work in progress">🔨</a>
+    <p title='Work in progress'>🔨</p>
+    {/* <a href="#" title="Work in progress">🔨</a> */}
   </li>
       {/* <li><p>💪🏼</p>
         <a href="https://www.linkedin.com/in/daniel-darwiche-9125a6269/" target="_blank" rel="noopener noreferrer" title="I&#x27;m on Linkedin!"></a>

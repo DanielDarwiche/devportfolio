@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-
 import React from 'react';
 
 const Projects: React.FC = () => {
@@ -49,10 +47,10 @@ return (
     </div>
 </li>
 <li className="li-projects">
-    <a href="#">💪🏼 Fitness Trainer Website <i className="fa-solid fa-up-right-from-square">
-    </i>
-    </a>
-    <p style={{textAlign:'center' }}>🔨 WORK IN PROGRESS 🔨</p>
+    <h4 style={{textAlign: 'center', textDecoration: 'underline'}} title='Work in progress'>💪🏼 Fitness Trainer Website </h4>
+    {/* <a href="#">💪🏼 Fitness Trainer Website <i className="fa-solid fa-up-right-from-square"></i></a> */}
+
+    <p style={{textAlign: 'center', textDecoration: 'underline'}}>🔨 WORK IN PROGRESS 🔨</p>
     {/* <p>Roos roof top training: A website for a fitness trainer.</p> */}
     <div className="tags">
     Tags:
