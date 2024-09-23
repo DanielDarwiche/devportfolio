@@ -8,6 +8,7 @@ h2{
 a {
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 }
 body{
   background: linear-gradient(100deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 50%);
@@ -161,7 +162,6 @@ body{
   display: flex;
   flex-wrap: wrap;
   gap: 0.1rem;
-  justify-content: center;
   width: 100%;
 }
 .liskills {
