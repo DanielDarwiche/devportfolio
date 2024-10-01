@@ -77,7 +77,9 @@ body{
   margin: 0;
 }
 .projekticons li {
-  margin: 0 0.5rem;
+  margin-top: 0.3rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
   font-size: 2rem;
   width: 4.2rem;
   height: 4.2rem;
@@ -206,12 +208,12 @@ body{
   text-align: center !important;
 }
 .tags {
-  text-align: center;
+  text-align: left;
   font-size: 0.8rem; 
   font-weight: 700;
   text-transform: uppercase;
 }
 .tags span {
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }

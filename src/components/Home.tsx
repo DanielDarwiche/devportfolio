@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import profilbild from '../photos/bild.jpg'
 import React from 'react';
 
@@ -37,13 +38,17 @@ const Home: React.FC = () => {
   <li>
     <a href="https://danieldarwiche.netlify.app" target="_blank" rel="noopener noreferrer" title="Developer Portfolio">💻</a>
   </li> 
-  <li>
+  {/* <li>
     <p title='Work in progress'>🔨</p>
-    {/* <a href="#" title="Work in progress">🔨</a> */}
-  </li>
-      {/* <li><p>💪🏼</p>
-        <a href="https://www.linkedin.com/in/daniel-darwiche-9125a6269/" target="_blank" rel="noopener noreferrer" title="I&#x27;m on Linkedin!"></a>
-      </li> */}
+    { <a href="#" title="Work in progress">🔨</a> 
+    💪🏼}
+  </li> */}
+      <li>
+        <a href="#" onClick={(e) => e.preventDefault()}  title="Work in progress">🔨</a>
+      </li>
+      <li>
+        <a href="#" onClick={(e) => e.preventDefault()}  title="Work in progress">🔨</a>
+      </li>
       </ul>
     </section>
   );

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 const Projects: React.FC = () => {
@@ -46,18 +47,29 @@ return (
         <span>Web development</span>
     </div>
 </li>
-<li className="li-projects">
-    <h4 style={{textAlign: 'center', textDecoration: 'underline'}} title='Work in progress'>💪🏼 Fitness Trainer Website </h4>
-    {/* <a href="#">💪🏼 Fitness Trainer Website <i className="fa-solid fa-up-right-from-square"></i></a> */}
 
-    <p style={{textAlign: 'center', textDecoration: 'underline'}}>🔨 WORK IN PROGRESS 🔨</p>
+
+
+<li className="li-projects">
+    <a href="#" onClick={(e) => e.preventDefault()}>🔨 Webshop 🔨</a>
+    
+    <p style={{textAlign: 'center', fontWeight: 'bold' }}>Work in progress.</p>
+    <div className="tags">
+    Tags:
+        <span>React,</span>
+        <span>Mobile,</span>
+        <span>Web development</span>
+    </div>
+</li>
+
+<li className="li-projects">
+    <a href="#" onClick={(e) => e.preventDefault()}>🔨 Fitness website 🔨</a>
+    <p style={{textAlign: 'center', fontWeight: 'bold' }}>Work in progress.</p>
     {/* <p>Roos roof top training: A website for a fitness trainer.</p> */}
     <div className="tags">
     Tags:
         <span>React,</span>
-        <span>TypeScript,</span>
         <span>Mobile,</span>
-        <span>Fitness,</span>
         <span>Web development</span>
     </div>
 </li>
