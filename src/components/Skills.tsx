@@ -11,7 +11,7 @@ const Skills: React.FC = () => {
   <li className="liskills">CSS</li>
   <li className="liskills">JavaScript</li>
   <li className="liskills">TypeScript</li>
-  <li className="liskills">React</li>
+  <li className="liskills">React.js</li>
   <li className="liskills">Bootstrap</li>
   <li className="liskills">Mantine</li>
   <li className="liskills">SPA</li>
@@ -24,6 +24,9 @@ const Skills: React.FC = () => {
   <li className="liskills">APIs</li>
   <li className="liskills">MinimalAPIs</li>
   <li className="liskills">MSSQL</li>
+  <li className="liskills">RDBMS</li>
+  <li className="liskills">SQL</li>
+  <li className="liskills">CI/CD</li>
   <li className="liskills">Node.js</li>
   <li className="liskills">WebForms</li>
   <li className="liskills">Dapper</li>
@@ -32,10 +35,10 @@ const Skills: React.FC = () => {
   <li className="liskills">LINQ</li>
   <li className="liskills">MVC</li>
   <li className="liskills">AzureDevOps</li>
+  <li className="liskills">OOP</li>
 </ul>
 <h3 style={{ color: '#00204a' }}>Other skills:</h3>
 <ul className='grid'>
-  <li className="liskills">OOP</li>
   <li className="liskills">TDD</li>
   <li className="liskills">xUnit</li>
   <li className="liskills">nUnit</li>
