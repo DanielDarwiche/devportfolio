@@ -8,8 +8,8 @@ const Home: React.FC = () => {
       <h2>Welcome!</h2>
       <img src={profilbild} alt="Profilbild" id='profilbild' />
       <p>My name is Daniel, and I’m a full stack developer from Sweden.<br/><br/>
-      Feel free to connect with me for project inquiries or potential collaborations!<br/><br/>
-      Take a look at my previous projects to see some of my earlier creations.</p>
+      Feel free to connect with me for project inquiries or potential collaborations.<br/><br/>
+      Take a look at my previous projects below to see some of my earlier creations.</p>
       <ul className="contact-links">
       <li>
       <a href="mailto:danielinti1@hotmail.com?subject=Hello!" title="Send me a mail">
