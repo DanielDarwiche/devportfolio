@@ -4,6 +4,7 @@
 }
 h2{
   margin-bottom: 0rem;
+  color:white;
 }
 a {
   text-decoration: none;
@@ -13,7 +14,7 @@ a {
 body{
   background: linear-gradient(100deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 50%);
   background-attachment: fixed; 
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 .header {
   position: fixed;
@@ -21,7 +22,6 @@ body{
   left: 0;
   right: 0;
   background-color: #00204a;
-  padding: 0.5rem;
   z-index: 1000;
 }
 .header nav ul {
@@ -56,17 +56,41 @@ body{
   width: 100%; 
   box-sizing: border-box; 
 }
+.aboutsection {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  width: 50%; 
+  margin: 0 auto; 
+  box-sizing: border-box;
+}
+#projects.projectsection { 
+  padding-top: 4rem;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 70%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 #home { 
   padding-top: 3rem;
   font-size: 1.2rem;
   text-align: left;
 }
+#hometexten{
+  padding-bottom: 1rem;
+  text-align: center;
+
+}
 #profilbild{
-  margin-top: 0.5rem;
-  width: 10rem;
+  margin-top: 1rem;
+  width: 15rem;
   object-fit: cover;
-  border-radius: 5rem;  
-  border: 0.1rem solid #000000;
+  border-radius: 9rem;  
 }
 .projekticons {
   display: flex;
@@ -77,17 +101,28 @@ body{
   margin: 0;
 }
 .projekticons li {
-  margin-top: 0.3rem;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  font-size: 2rem;
-  width: 4.2rem;
-  height: 4.2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size:3.5rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  background-color: hsla(0, 0%, 100%, .2);
+  transition: background-color 0.3s ease;
+}
+.projekticons li img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
   transition: background-color 0.3s ease;
 }
 .contact-links {
@@ -106,7 +141,7 @@ body{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: hsla(0, 0%, 100%, .8);
+  background-color: white;
   transition: background-color 0.3s ease;
 }
 .fa-github,
@@ -115,6 +150,47 @@ body{
   font-size: 2rem;
   color: #00204a;
 }
+
+.direct-contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.direct-contact-links li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1.5rem;
+  margin-top: 10%;
+}
+
+.direct-contact-links li p {
+  margin-bottom: 1rem;
+  color:white;
+}
+
+.direct-contact-links li a {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color:white;
+  transition: background-color 0.3s ease;
+}
+
+.direct-contact-links .fa-github,
+.direct-contact-links .fa-envelope,
+.direct-contact-links .fa-linkedin {
+  font-size: 3rem;
+  color: #00204a;
+}
+
 .fa-face-smile-beam {
   color: #00204a;  
 }
@@ -142,38 +218,37 @@ body{
   display: flex;
   justify-content: center;
 }
-.box-layout{
-  background-color: hsla(0, 0%, 100%, .1);
-  list-style-type: none;
-  border-radius: 1rem;  
-  padding-top: 1rem;
-  padding-bottom: 2.5rem;
-  width: 90%;
-}
 #skills { 
   padding-top: 4rem;
   text-align: center;
-  font-size: 1.2rem;
 }
-.grid {
-  color: white;
-  border-radius: 2rem;
-  margin-top: 0rem;
-  font-weight: 600;
-  margin-bottom: 0rem;
+.skillgrid {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.1rem;
-  width: 100%;
+  gap: 0.4rem;
+  width: 45%;
 }
 .liskills {
-  background-color: hsla(0, 0%, 100%, .1);
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.5);
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.4);
   border-radius: 1rem;
   padding: 0.6rem 0.6rem;
-  margin: 0.1rem;
+  margin: 0.15rem;
   list-style: none;
   text-align: center;
+  transition: all 0.3s ease; 
+}
+.liskills:hover {
+    transform: scale(1.08); 
+    background-color: hsla(0, 0%, 100%); 
+    box-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.8);
+  }
+.goldenskill{
+  background-color: hsla(0, 0%, 100%, 0.95);
+
 }
 #projects { 
   padding-top: 4rem;
@@ -186,34 +261,62 @@ body{
   color: black;
   margin-top: 1rem;
   display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  grid-template-columns: 1fr; 
   gap: 1rem;
   width: 100%;
+  justify-items: center; 
   padding: 0;
 }
+
 .li-projects {
   background-color: hsla(0, 0%, 100%, .1);
-  box-shadow: 0.1rem 0.6rem 0.9rem rgba(0, 0, 0, 0.7);
-  border-radius: 2rem;
+  box-shadow: 0.1rem 0.6rem 0.9rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
   padding: 1rem;
   list-style: none;
   text-align: left;
+  transition: transform 0.3s ease; 
+  width: 80%; 
+}
+.projectphoto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.image-wrapper {
+  padding: 1rem 0;
+}
+
+.placeholder-image {
+  width: 100%;
+  height:15rem;
+  margin: 0 auto;
+  background-color: hsla(0, 0%, 100%, .5);
+  filter: blur(2px);
+  border-radius: 5px;
+}
+
+
+.li-projects:hover {
+  transform: scale(1.02); 
 }
 .li-projects a{
   display: block;  
-  text-decoration: underline;  
   color:black;
-  font-size:1.2rem;
-  font-weight: 700;
+  font-size: 1.8rem;  
   text-align: center !important;
 }
 .tags {
   text-align: left;
   font-size: 0.8rem; 
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing:0.025rem;
+  margin-top: -1rem;
 }
 .tags span {
   display: inline-block;
-  margin-right: 0.5rem;
 }
