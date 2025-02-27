@@ -11,10 +11,14 @@ a {
   font-weight: 600;
   cursor: pointer;
 } 
+p{
+  color: white;
+}
 body{
   background: linear-gradient(100deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 50%);
   background-attachment: fixed; 
-  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+
 }
 .header {
   position: fixed;
@@ -67,24 +71,17 @@ body{
   margin: 0 auto; 
   box-sizing: border-box;
 }
-#projects.projectsection { 
-  padding-top: 4rem;
-  text-align: center;
-  font-size: 1.2rem;
-  width: 70%;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
 
 #home { 
   padding-top: 3rem;
   font-size: 1.2rem;
   text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 #hometexten{
   padding-bottom: 1rem;
   text-align: center;
-
 }
 #profilbild{
   margin-top: 1rem;
@@ -191,15 +188,17 @@ body{
   color: #00204a;
 }
 
-.fa-face-smile-beam {
-  color: #00204a;  
-}
 #about { 
   padding-top: 4rem;
   text-align: left;
   color:black ;
   font-size: 1.2rem;
+  line-height: 1.5;
 }
+.fa-bug {
+  color: #00204a;
+}
+
 #contact { 
   padding-top: 0rem;
   text-align: center;
@@ -217,106 +216,4 @@ body{
   width: 4rem;
   display: flex;
   justify-content: center;
-}
-#skills { 
-  padding-top: 4rem;
-  text-align: center;
-}
-.skillgrid {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  width: 45%;
-}
-.liskills {
-  background-color: hsla(0, 0%, 100%, 0.5);
-  box-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.4);
-  border-radius: 1rem;
-  padding: 0.6rem 0.6rem;
-  margin: 0.15rem;
-  list-style: none;
-  text-align: center;
-  transition: all 0.3s ease; 
-}
-.liskills:hover {
-    transform: scale(1.08); 
-    background-color: hsla(0, 0%, 100%); 
-    box-shadow: 0.1rem 0.1rem 0.2rem rgba(255, 255, 255, 0.8);
-  }
-.goldenskill{
-  background-color: hsla(0, 0%, 100%, 0.95);
-
-}
-#projects { 
-  padding-top: 4rem;
-  text-align: center;
-  font-size: 1.2rem;
-  width: 100%;
-  box-sizing: border-box;
-}
-.projectgrid {
-  color: black;
-  margin-top: 1rem;
-  display: grid; 
-  grid-template-columns: 1fr; 
-  gap: 1rem;
-  width: 100%;
-  justify-items: center; 
-  padding: 0;
-}
-
-.li-projects {
-  background-color: hsla(0, 0%, 100%, .1);
-  box-shadow: 0.1rem 0.6rem 0.9rem rgba(0, 0, 0, 0.3);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  list-style: none;
-  text-align: left;
-  transition: transform 0.3s ease; 
-  width: 80%; 
-}
-.projectphoto img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-.image-wrapper {
-  padding: 1rem 0;
-}
-
-.placeholder-image {
-  width: 100%;
-  height:15rem;
-  margin: 0 auto;
-  background-color: hsla(0, 0%, 100%, .5);
-  filter: blur(2px);
-  border-radius: 5px;
-}
-
-
-.li-projects:hover {
-  transform: scale(1.02); 
-}
-.li-projects a{
-  display: block;  
-  color:black;
-  font-size: 1.8rem;  
-  text-align: center !important;
-}
-.tags {
-  text-align: left;
-  font-size: 0.8rem; 
-  font-weight: bold;
-  letter-spacing:0.025rem;
-  margin-top: -1rem;
-}
-.tags span {
-  display: inline-block;
 }

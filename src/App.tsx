@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 
 import './App.css';
 import './Media.css';
+import './Feats.css';
 
 function App() {
   return (
