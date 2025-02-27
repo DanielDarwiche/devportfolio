@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
 <h3>Front end:</h3>
 <ul className='skillgrid'>
   <li className="liskills">HTML</li>
-  <li className="liskills">Css</li>
+  <li className="liskills">CSS</li>
   <li className="liskills goldenskill">JavaScript</li>
   <li className="liskills">TypeScript</li>
   <li className="liskills">React.js</li>
@@ -18,7 +18,7 @@ const Skills: React.FC = () => {
 <h3>Back end:</h3>
 <ul className='skillgrid'>
   <li className="liskills goldenskill">C#</li>
-  <li className="liskills goldenskill">.Net</li>
+  <li className="liskills goldenskill">.NET</li>
   <li className="liskills">ASP.NET</li>
   <li className="liskills">APIs</li>
   <li className="liskills">MinimalAPIs</li>
