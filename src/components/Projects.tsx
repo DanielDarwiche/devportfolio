@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import amelia from '../photos/amelia2.png';
+import spanska from '../photos/hang.png';
+import crumb from '../photos/crumbs.png';
 
 const Projects: React.FC = () => {
 return (
@@ -26,10 +28,9 @@ return (
 <li className="li-projects">
     <a href="https://spanska.netlify.app" target="_blank" rel="noopener noreferrer">Spanish Learning Game 
     </a>
-    {/* <div className='projectphoto'></div> */}
-    <div className="image-wrapper">
-  <div className="placeholder-image"></div>
-</div>
+    <div className='projectphoto'>
+    <img src={spanska} alt="Hangman" />
+    </div>  
     <p>Hangman game: A mobile website to study Spanish from Swedish.</p>
     <div className="tags">
     Tags:
@@ -43,10 +44,9 @@ return (
 <li className="li-projects">
     <a href="https://crumbsbyemelie.netlify.app" target="_blank" rel="noopener noreferrer">Baking website  
     </a>
-    {/* <div className='projectphoto'></div> */}
-    <div className="image-wrapper">
-  <div className="placeholder-image"></div>
-</div>
+    <div className='projectphoto'>
+    <img src={crumb} alt="Crumbs" />
+    </div>  
     <p>Crumbs by Emelie: A website for a local baker.<br/>Includes a gallery with images.</p>
     <div className="tags">
         Tags:
@@ -63,12 +63,12 @@ return (
   <div className="placeholder-image"></div>
 </div>
     <p style={{textAlign: 'center', fontWeight: 'bold' }}>🔨Work in progress.🔨</p>
-    <div className="tags">
+    {/* <div className="tags">
     Tags:
         <span>React,</span>
         <span>Mobile,</span>
         <span>Web development</span>
-    </div>
+    </div> */}
 </li>
 
     </ul>
