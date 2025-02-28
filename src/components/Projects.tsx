@@ -3,7 +3,7 @@ import React from 'react';
 import amelia from '../photos/amelia2.png';
 import spanska from '../photos/hang.png';
 import crumb from '../photos/crumbs.png';
-
+ 
 const Projects: React.FC = () => {
 return (
     <section id="projects" className="projectsection">
